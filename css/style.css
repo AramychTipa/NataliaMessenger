@@ -228,6 +228,22 @@ header img {
     }
 }
 
+@media (max-width: 380px) {
+    .rating {
+        display: grid;
+        height: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 684px) {
+    .rating {
+        display: grid;
+        height: 100%;
+        text-align: center;
+    }
+}
+
 p {
     font-family: "MaxSans-Regular";
     text-shadow: 0 0 5px #000000;
@@ -255,3 +271,4 @@ a {
 section {
     margin-bottom: 20px;
 }
+
