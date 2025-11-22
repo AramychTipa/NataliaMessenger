@@ -61,6 +61,7 @@ body:after {
     background-image: url("bg.png");
     transform: rotate(10deg);
     filter: blur(9px);
+    overflow: hidden;
 }
 
 body {
@@ -256,4 +257,5 @@ section {
 
 .swtheme svg {
     margin: 8px;
+
 }
