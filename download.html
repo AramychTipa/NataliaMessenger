@@ -2,20 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Скачать мессенджер Natalia</title>
+    <title>Мессенджер Natalia — скачать</title>
     <meta name="description" content="Мессенджер Natalia - лучшая замена мессенджера MAX" /> 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="assets/images/favicon.png">
+    <script src="js/index.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
+  <body class="dark">
     <header>
-        <a href="index.html"><img src="assets/images/MessNatwithoutbg.png" draggable="false"></a>
         <nav class="navigation">
-            <a href="webnatalia.html" id="webnatalia">Открыть веб-версию</a>
+          <div class="navigationblock">
+            <a href="index.html" class="homelinkcontainer">
+              <img src="assets/images/MessNatwithoutbg.png" draggable="false">
+            </a>
+            <a href="download.html">Скачать</a>
+            <a href="#" id="webnatalia">Открыть веб-версию</a>
+            <div class="swtheme" id="switchtheme"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg></div>
+          </div>
         </nav>
     </header>
-    <main>
+    <main id="top">
       <section class="entersection" style="text-align: center;">
         <h1>Мессенджер Natalia под любое устройство!</h1>
         <p>
@@ -36,9 +43,6 @@
           &nbsp;AppGallery
         </a>
         <p>Для устройств от Android 10 или выше</p>
-        <div class="enterlogo">
-          <img src="assets/images/MessNatlogo.png" draggable="false">
-        </div>
         <h3>Для iPhone</h3>
         <a class="downloadbutton" href="https://apps.apple.com/ru/">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><path fill="#fff" d="M27.23 9.82c-.17.13-3.19 1.79-3.19 5.49 0 4.27 3.85 5.78 3.96 5.82-.02.1-.61 2.07-2.03 4.09-1.26 1.77-2.57 3.54-4.58 3.54-2 0-2.52-1.14-4.83-1.14-2.26 0-3.06 1.18-4.9 1.18-1.83 0-3.1-1.64-4.58-3.66A17.36 17.36 0 0 1 4 15.61c0-5.6 3.73-8.57 7.4-8.57 1.94 0 3.57 1.25 4.79 1.25 1.16 0 2.98-1.33 5.2-1.33.84 0 3.86.08 5.84 2.86Zm-6.9-5.23A6.35 6.35 0 0 0 21.9.58c0-.2-.02-.41-.06-.58-1.49.05-3.26.97-4.33 2.18a6.19 6.19 0 0 0-1.63 3.9c0 .23.04.46.06.53.1.01.25.03.4.03 1.34 0 3.02-.87 4-2.05Z" opacity=".9"></path></svg>
@@ -69,7 +73,6 @@
         <p>Для устройств от Windows 8.1 или выше и macOS 10 или выше</p>
         </p>
       </section>
-      <br>
     </main>
     <footer class="footer">
       <img src="assets/images/MessNatlogo.png" draggable="false">
@@ -80,6 +83,7 @@
           Скачать Natalia
         </div>
       </a>
+      <p><a href="#top">Вверх</a></p>
       <br>
       <p>Hlebosoft © 2025</p>
     </footer>
