@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "MaxSans-Medium";
+    src: url(fonts/MaxSans-Medium.woff2);
+}
+
+@font-face {
+    font-family: "MaxSans-Regular";
+    src: url(fonts/MaxSans-Regular.woff2);
+}
+
+h1, h2, h3, h4, h5 {
+    color: #FFFFFF;
+    font-family: "MaxSans-Medium";
+    text-shadow: 0 0 5px #000000;
+}
+
+* {
+    color: #cecece;
+}
+
+.enterheader {
+    margin: 50px;
+    z-index: 9;
+    text-shadow: 0 0 5px #000000;
+}
+
+.enterheader2 {
+    margin: 50px;
+    margin-top: -40px;
+    z-index: 9;
+    text-shadow: 0 0 5px #000000;
+}
+
+.entertext {
+    margin-top: -50px;
+    margin-left: 50px;
+    font-family: "MaxSans-Regular";
+    z-index: 9;
+    text-shadow: 0 0 5px #000000;
+}
+
+@media (max-width: 375px) {
+    .enterheader, .entertext {
+        font-size: 15px;
+        margin-right: 55px;
+    }
+}
+
+body:after {
+    content: '';
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right top;
+    background-image: url("bg.png");
+    transform: rotate(10deg);
+    filter: blur(9px);
+}
+
+body {
+    margin: 0;
+}
+
+.light {
+    background-color: #bdbdbd;
+    transition: all 0.3s ease-in-out;
+}
+
+.dark {
+    background-color: #0d0d0d;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    background-color: rgba(140, 196, 255, 0.479);
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+    padding: 14px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 40px 25px #0000000d, 0 5px 10px #0000001a;
+}
+
+header img {
+    width: 50px;
+    padding-left: 20px;
+}
+
+.homelinkcontainer {
+    width: 10%;
+}
+
+@media (max-width: 375px) {
+    .header {
+        left: 10px;
+        right: 10px;
+    }
+}
+
+.navigation a {
+    color: #0d0d0d;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 27px;
+    text-decoration: none;
+    font-family: "MaxSans-Regular";
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.navigation a:hover {
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
+}
+
+#webnatalia {
+    position: absolute;
+    left: 83%;
+}
+
+@media (max-width: 960px) {
+    #webnatalia {
+        display: none;
+    }
+    .enterlogo {
+        margin-right: -250px;
+    }
+}
+
+@media (max-width: 375px) {
+    .enterlogo {
+        margin-right: -250px;
+        margin-top: 150px;
+        transform: scale(0.5);
+    }
+}
+
+.downloadbutton {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(140, 195, 255), rgb(162, 177, 224));
+    width: 14%;
+    height: auto;
+    padding: 6px;
+    padding-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: "MaxSans-Medium";
+    user-select: none;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 5px #000000c4;
+}
+
+.downloadbutton:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.downloadbutton:focus-visible {
+    outline: 4px dashed darkorange;
+}
+
+@media (max-width: 960px) {
+    .downloadbutton {
+        width: 25%;
+    }
+}
+
+@media (max-width: 375px) {
+    .downloadbutton {
+        width: 50%;
+        margin-left: -5px;
+    }
+}
+
+.rating {
+    background-color: #74AE16;
+    padding: 5px;
+    color: #0d0d0d;
+    font-family: "MaxSans-Regular";
+    margin-left: 55px;
+    display: flex;
+    margin-top: 5px;
+    margin-right: 50px;
+    box-shadow: 0 0 10px #000000;
+}
+
+@media (max-width: 375px) {
+    .rating {
+        display: grid;
+        height: 100%;
+        text-align: center;
+    }
+}
+
+p {
+    font-family: "MaxSans-Regular";
+    text-shadow: 0 0 5px #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #0d0d0d;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer img {
+    width: 250px;
+    margin-top: 20px;
+}
+
+.entersection {
+    margin-top: 135px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.swtheme {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    background-color: #dedede;
+    border-radius: 50%;
+    width: 3%;
+    height: 7%;
+    padding: 1px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.swtheme svg {
+    margin: 8px;
+}
